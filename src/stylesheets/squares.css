@@ -1,0 +1,64 @@
+#sView{
+  position: fixed;
+  width: 100%;
+  height: calc(var(--vh) * 100);
+  top: calc(var(--vh) * 0);
+}
+
+#sOptions{
+  position: fixed;
+  width: 100%;
+  height: calc(var(--vh) * 7.5);
+  top: calc(var(--vh) * 0);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-bottom: 1px solid black;
+}
+
+#sPresetSelect{
+  max-width: 300px;
+}
+
+.sControlClass{
+  width: 90%;
+  height: 90%;
+}
+
+#sContents{
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: calc(var(--vh) * 92.5);
+  top: calc(var(--vh) * 7.5);
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+#squareBox{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  align-content: flex-start;
+}
+
+.soundSquareButton{
+  margin: 0;
+  padding: 0;
+  border: 1px solid black;
+  box-sizing: border-box;
+  float: left;
+  touch-action: manipulation;
+}

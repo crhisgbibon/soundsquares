@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="./src/stylesheets/main.css">
+    <link rel="stylesheet" href="./src/stylesheets/squares.css">
+    <title>Sound Squares</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/modern-normalize@v1.1.0/modern-normalize.min.css" rel="stylesheet">
+  </head>
+  <body class='min-h-screen max-h-screen w-full'>
+
+    <div id="sView">
+
+      <div id="sOptions">
+        <!-- <select class="sControlClass" id="sGridSizeSelect">
+          <option value='1'>🎵 1x1</option>
+          <option value='4'>🎵 2x2</option>
+          <option value='9'>🎵 3x3</option>
+          <option value='16'>🎵 4x4</option>
+          <option value='25'>🎵 5x5</option>
+          <option value='36'>🎵 6x6</option>
+          <option value='49'>🎵 7x7</option>
+          <option value='64'>🎵 8x8</option>
+          <option value='81'>🎵 9x9</option>
+          <option value='100'>🎵 10x10</option>
+        </select> -->
+        <select class="sControlClass" id="sPresetSelect">
+          <!-- <option value='' selected>📂 Library</option> -->
+          <!-- <optgroup label='Presets'>
+            <option value='soundbank.json'>📂 Test</option> -->
+          </optgroup>
+          <optgroup label='Synths'>
+            <option value='sine' selected>🎹 Sine</option>
+            <option value='square'>🎹 Square</option>
+            <option value='sawtooth'>🎹 Sawtooth</option>
+            <option value='triangle'>🎹 Triangle</option>
+            <option value='custom'>🎹 Custom</option>
+          </optgroup>
+        </select>
+      </div>
+      
+      <div id="sContents">
+        <div id="sBox">
+
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+  <script type='module' src="./src/javascripts/main.ts"></script>
+</html>
